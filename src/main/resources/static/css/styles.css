@@ -1,0 +1,94 @@
+.form-signin{
+    max-width: 500px;
+    margin: 50px auto 50px auto;
+}
+
+.form-signin button{
+    margin: auto;
+    width: 200px;
+}
+
+.gamelist{
+    max-width: 400px;
+    margin: auto;
+}
+
+.gamelist .row{
+    padding-bottom: 20px;
+}
+
+.info-text{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.game-area{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto 50px auto;
+    background-color: transparent;
+}
+
+.game-area .row{
+    padding: 0;
+    margin: 0;
+    width: 300px;
+}
+
+.game-area .col{
+    padding: 0;
+    margin: 0;
+    height: 100px;
+}
+
+.game-area button{
+    width: 100px;
+    height: 100px;
+}
+
+.info-buttons{
+    width: 200px;
+    margin: auto;
+}
+
+.info-buttons button{
+    width: 200px;
+}
+
+/*-------------------*/
+
+.red-x{
+    background-image: url(../img/red-x.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.red-0{
+    background-image: url(../img/red-0.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.blue-x{
+    background-image: url(../img/blue-x.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blue-0{
+    background-image: url(../img/blue-0.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.neutral{
+    background-image: url(../img/null.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

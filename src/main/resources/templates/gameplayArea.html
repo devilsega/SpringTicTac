@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TicTacToe game</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" href="../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" href="../static/css/styles.css"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/fonts.css}" href="../static/css/fonts.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="text-center info-text">
+        Информационный текст
+    </div>
+    <div class="game-area">
+        <div class="row">
+            <div class="col col-xs-4 a1">
+                <button type="button" id="a1" class="grid neutral"></button>
+            </div>
+            <div class="col col-xs-4 b1">
+                <button type="button" id="b1" class="grid neutral"></button>
+            </div>
+            <div class="col col-xs-4 c1">
+                <button type="button" id="c1" class="grid neutral"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-xs-4 a2">
+                <button type="button" id="a2" class="grid neutral"></button>
+            </div>
+            <div class="col col-xs-4 b2">
+                <button type="button" id="b2" class="grid neutral"></button>
+            </div>
+            <div class="col col-xs-4 c2">
+                <button type="button" id="c2" class="grid neutral"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-xs-4 a3">
+                <button type="button" id="a3" class="grid neutral"></button>
+            </div>
+            <div class="col col-xs-4 b3">
+                <button type="button" id="b3" class="grid neutral"></button>
+            </div>
+            <div class="col col-xs-4 c3">
+                <button type="button" id="c3" class="grid neutral"></button>
+            </div>
+        </div>
+    </div>
+    <div class="info-buttons">
+        <button type="button" id="exit" class="btn btn-lg btn-danger">Выйти</button>
+    </div>
+</div>
+
+<script type="text/javascript" th:src="@{/js/jquery.min.js}" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" th:src="@{/js/jquery.min.js}" src="../static/js/bootstrap.min.js"></script>
+<script type="text/javascript" th:src="@{/js/game.js}" src="../static/js/game.js"></script>
+</body>
+</html>
