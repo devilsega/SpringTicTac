@@ -144,47 +144,44 @@ public class GamePlayCalc {
     }
 
     private Player calculateResult(GameInstance gameInstance){
-        try {
-            String a1,a2,a3,b1,b2,b3,c1,c2,c3;
+        String a1,a2,a3,b1,b2,b3,c1,c2,c3;
 
-            a1=gameInstance.getA1();
-            a2=gameInstance.getA2();
-            a3=gameInstance.getA3();
-            b1=gameInstance.getB1();
-            b2=gameInstance.getB2();
-            b3=gameInstance.getB3();
-            c1=gameInstance.getC1();
-            c2=gameInstance.getC2();
-            c3=gameInstance.getC3();
+        a1=gameInstance.getA1();
+        a2=gameInstance.getA2();
+        a3=gameInstance.getA3();
+        b1=gameInstance.getB1();
+        b2=gameInstance.getB2();
+        b3=gameInstance.getB3();
+        c1=gameInstance.getC1();
+        c2=gameInstance.getC2();
+        c3=gameInstance.getC3();
 
-            if((a1!=null&a2!=null&a3!=null)&&(a1.equals(a2) && a1.equals(a3))){
-                return playerRepo.findByName(gameInstance.getA1());
-            }
-            if((b1!=null&b2!=null&b3!=null)&&(b1.equals(b2) && b1.equals(b3))){
-                return playerRepo.findByName(gameInstance.getA1());
-            }
-            if((c1!=null&c2!=null&c3!=null)&&(c1.equals(c2) && c1.equals(c3))){
-                return playerRepo.findByName(gameInstance.getA1());
-            }
-            if((a1!=null&b1!=null&c1!=null)&&(a1.equals(b1) && a1.equals(c1))){
-                return playerRepo.findByName(gameInstance.getA1());
-            }
-            if((a2!=null&b2!=null&c2!=null)&&(a2.equals(b2) && a2.equals(c2))){
-                return playerRepo.findByName(gameInstance.getA1());
-            }
-            if((a3!=null&b3!=null&c3!=null)&&(a3.equals(b3) && a3.equals(c3))){
-                return playerRepo.findByName(gameInstance.getA1());
-            }
-            if((a1!=null&b2!=null&c3!=null)&&(a1.equals(b2) && a1.equals(c3))){
-                return playerRepo.findByName(gameInstance.getA1());
-            }
-            if((c1!=null&b2!=null&a3!=null)&&(c1.equals(b2) && a1.equals(a3))){
-                return playerRepo.findByName(gameInstance.getA1());
-            }
-            return null;
+        if((a1!=null && a2!=null && a3!=null)&&(a1.equals(a2) & a1.equals(a3))){
+            return playerRepo.findByName(gameInstance.getA1());
         }
-        catch (NullPointerException ex){
-            return null;
+        if((b1!=null && b2!=null && b3!=null)&&(b1.equals(b2) & b1.equals(b3))){
+            return playerRepo.findByName(gameInstance.getB1());
         }
+        if((c1!=null && c2!=null && c3!=null)&&(c1.equals(c2) & c1.equals(c3))){
+            return playerRepo.findByName(gameInstance.getC1());
+        }
+        if((a1!=null && b1!=null && c1!=null)&&(a1.equals(b1) & a1.equals(c1))){
+            return playerRepo.findByName(gameInstance.getA1());
+        }
+        if((a2!=null && b2!=null && c2!=null)&&(a2.equals(b2) & a2.equals(c2))){
+            return playerRepo.findByName(gameInstance.getA2());
+        }
+        if((a3!=null && b3!=null && c3!=null)&&(a3.equals(b3) & a3.equals(c3))){
+            return playerRepo.findByName(gameInstance.getA3());
+        }
+        System.out.println("a1-b2-c3");
+        if((a1!=null && b2!=null && c3!=null)&&(a1.equals(b2) & a1.equals(c3))){
+            return playerRepo.findByName(gameInstance.getA1());
+        }
+        System.out.println("c1-b2-a3");
+        if((c1!=null && b2!=null && a3!=null)&&(c1.equals(b2) & c1.equals(a3))){
+            return playerRepo.findByName(gameInstance.getC1());
+        }
+        return null;
     }
 }
