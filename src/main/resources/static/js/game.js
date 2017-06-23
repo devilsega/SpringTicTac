@@ -33,6 +33,7 @@ $(document).ready(function() {
         });
     });
 
+    //Game grid update timer
     interval = setInterval(function() {
         checkStatus();
     }, 3000)

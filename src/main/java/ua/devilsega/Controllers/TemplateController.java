@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 
 /**
- * Created by sorokin_si on 22.06.2017.
+ * Controller for the template-driven html frontend
  */
 
 @Controller

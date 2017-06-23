@@ -4,7 +4,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 /**
- * Created by sorokin_si on 21.06.2017.
+ * Class for player instance
  */
 
 @Entity

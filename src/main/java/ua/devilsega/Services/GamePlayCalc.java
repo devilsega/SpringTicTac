@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Created by sorokin_si on 21.06.2017.
+ * Main service responsible for the game pipeline
  */
 
 @Service
@@ -174,11 +174,9 @@ public class GamePlayCalc {
         if((a3!=null && b3!=null && c3!=null)&&(a3.equals(b3) & a3.equals(c3))){
             return playerRepo.findByName(gameInstance.getA3());
         }
-        System.out.println("a1-b2-c3");
         if((a1!=null && b2!=null && c3!=null)&&(a1.equals(b2) & a1.equals(c3))){
             return playerRepo.findByName(gameInstance.getA1());
         }
-        System.out.println("c1-b2-a3");
         if((c1!=null && b2!=null && a3!=null)&&(c1.equals(b2) & c1.equals(a3))){
             return playerRepo.findByName(gameInstance.getC1());
         }

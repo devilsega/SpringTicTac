@@ -5,7 +5,7 @@ import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
- * Created by sorokin_si on 21.06.2017.
+ * Model class of game instance
  */
 
 @Entity

@@ -1,7 +1,7 @@
 package ua.devilsega.Object;
 
 /**
- * Created by sorokin_si on 22.06.2017.
+ * POJO class that forms list of active games
  */
 public class ListedGameSimpleForm {
     private int id;

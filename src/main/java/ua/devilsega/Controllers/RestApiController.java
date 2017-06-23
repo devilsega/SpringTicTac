@@ -8,7 +8,7 @@ import ua.devilsega.JPA.Model.GameInstance;
 import ua.devilsega.Services.GamePlayCalc;
 
 /**
- * Created by sorokin_si on 21.06.2017.
+ * REST controller
  */
 
 @RestController
