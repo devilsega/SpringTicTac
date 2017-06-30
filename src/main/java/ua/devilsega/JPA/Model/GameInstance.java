@@ -58,19 +58,6 @@ public class GameInstance {
     private List<Player>players;
 
     public GameInstance(){
-        a1=null;
-        a2=null;
-        a3=null;
-        b1=null;
-        b2=null;
-        b3=null;
-        c1=null;
-        c2=null;
-        c3=null;
-        isClosed=false;
-        currentPlayer=null;
-        winner=null;
-        players=null;
     }
 
     public void setPlayers(List<Player>players){

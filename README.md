@@ -6,7 +6,7 @@ Made for training and practising in javaEE.
 **##HOW TO USE##**
 -
 - Compile to JAR archive (comes with Tomcat server by default), run in java environment.
-- Browser entry point: http:/localhost:8080
+- Browser entry point: http://localhost:8080
 
 **##RESTFULL HOWTO##**
 -
@@ -47,4 +47,3 @@ Failure: returns HttpStatus 400.
 **##AUTHOR##**
 -
 Written by Sergey Sorokin, sorokin1984@gmail.com
-The MIT License.
