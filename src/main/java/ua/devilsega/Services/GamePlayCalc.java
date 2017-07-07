@@ -69,20 +69,21 @@ public class GamePlayCalc {
         try {
             if (currentPlayer.getName().equals(playerName) & gameInstance.getPlayers().size()==2 & !gameInstance.isClosed()){
                 if (gameInstance.getPositionValue(move)==null){
-                    gameInstance.setPositionValue(move,currentPlayer);
-                    Player winner = calculateResult(gameInstance);
-                    for (Player item:gameInstance.getPlayers()) {
-                        if (!currentPlayer.equals(item)){
-                            gameInstance.setCurrentPlayer(item);
-                            break;
+                    if (gameInstance.setPositionValue(move,currentPlayer)){
+                        Player winner = calculateResult(gameInstance);
+                        for (Player item:gameInstance.getPlayers()) {
+                            if (!currentPlayer.equals(item)){
+                                gameInstance.setCurrentPlayer(item);
+                                break;
+                            }
                         }
+                        if (winner!=null){
+                            gameInstance.setClosed(true);
+                            gameInstance.setWinner(winner);
+                        }
+                        gameInstanceRepo.saveAndFlush(gameInstance);
+                        return true;
                     }
-                    if (winner!=null){
-                        gameInstance.setClosed(true);
-                        gameInstance.setWinner(winner);
-                    }
-                    gameInstanceRepo.saveAndFlush(gameInstance);
-                    return true;
                 }
             }
             return false;

@@ -189,46 +189,55 @@ public class GameInstance {
     }
 
     public boolean setPositionValue(String position, Player player){
+        boolean result = false;
         switch (position){
             case "a1": {
                 setA1(player.getName());
+                result = true;
                 break;
             }
             case "a2": {
                 setA2(player.getName());
+                result = true;
                 break;
             }
             case "a3": {
                 setA3(player.getName());
+                result = true;
                 break;
             }
             case "c1": {
                 setC1(player.getName());
+                result = true;
                 break;
             }
             case "c2": {
                 setC2(player.getName());
+                result = true;
                 break;
             }
             case "c3": {
                 setC3(player.getName());
+                result = true;
                 break;
             }
             case "b1": {
                 setB1(player.getName());
+                result = true;
                 break;
             }
             case "b2": {
                 setB2(player.getName());
+                result = true;
                 break;
             }
             case "b3": {
                 setB3(player.getName());
+                result = true;
                 break;
             }
-            default:return false;
         }
-        return true;
+        return result;
     }
 
 }

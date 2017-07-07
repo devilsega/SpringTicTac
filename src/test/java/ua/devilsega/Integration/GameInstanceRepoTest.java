@@ -1,4 +1,4 @@
-package ua.devilsega;
+package ua.devilsega.Integration;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,7 +25,7 @@ public class GameInstanceRepoTest {
     private GameInstanceRepo gameInstanceRepo;
 
     @Test
-    public void test(){
+    public void WhenAddNewGameInstance_thenReturnThisGameInstance(){
         GameInstance testInstance = new GameInstance();
         entityManager.persist(testInstance);
         entityManager.flush();
